@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora online</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="tipo_calculadora">Padrão</h1>
+        <div id="display">
+            <p id="operacao"></p>
+        </div>
+        <div id="display2">
+            <p id="resultado">0</p>
+        </div>
+        <table>
+            <tr>
+                <td><button class="operadores" onclick="apagarResultado()">CE</button></td>
+                <td><button class="operadores" onclick="apagar()">C</button></td>
+                <td><button class="operadores" onclick="apagarUltimo()">←</button></td>
+                <td><button class="operadores" onclick="conta('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="numerarios" onclick="insert('7')">7</button></td>
+                <td><button class="numerarios" onclick="insert('8')">8</button></td>
+                <td><button class="numerarios" onclick="insert('9')">9</button></td>
+                <td><button class="operadores" onclick="conta('x')">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="numerarios" onclick="insert('4')">4</button></td>
+                <td><button class="numerarios" onclick="insert('5')">5</button></td>
+                <td><button class="numerarios" onclick="insert('6')">6</button></td>
+                <td><button class="operadores" onclick="conta('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="numerarios" onclick="insert('1')">1</button></td>
+                <td><button class="numerarios" onclick="insert('2')">2</button></td>
+                <td><button class="numerarios" onclick="insert('3')">3</button></td>
+                <td><button class="operadores" onclick="conta('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="operadores" onclick="conta('%')">%</button></td>
+                <td><button class="numerarios" onclick="insert('0')">0</button></td>
+                <td><button class="operadores" onclick="insert('.')">.</button></td>
+                <td><button class="igual" onclick="conta('=')">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
